@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		9F4344DD22098D6E001E5F1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4344DC22098D6E001E5F1A /* AppDelegate.swift */; };
-		9F4344DF22098D6E001E5F1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4344DE22098D6E001E5F1A /* ViewController.swift */; };
+		9F4344DF22098D6E001E5F1A /* AirFreightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4344DE22098D6E001E5F1A /* AirFreightViewController.swift */; };
 		9F4344E222098D6E001E5F1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F4344E022098D6E001E5F1A /* Main.storyboard */; };
 		9F4344E422098D71001E5F1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F4344E322098D71001E5F1A /* Assets.xcassets */; };
 		9F4344E722098D71001E5F1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F4344E522098D71001E5F1A /* LaunchScreen.storyboard */; };
+		9F4344F22209A133001E5F1A /* SeaFreightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4344F12209A133001E5F1A /* SeaFreightViewController.swift */; };
+		9F4344F42209A145001E5F1A /* RoadFreightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4344F32209A145001E5F1A /* RoadFreightViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9F4344D922098D6E001E5F1A /* Shipment Calc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shipment Calc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F4344DC22098D6E001E5F1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9F4344DE22098D6E001E5F1A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9F4344DE22098D6E001E5F1A /* AirFreightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirFreightViewController.swift; sourceTree = "<group>"; };
 		9F4344E122098D6E001E5F1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F4344E322098D71001E5F1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F4344E622098D71001E5F1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F4344E822098D71001E5F1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F4344F12209A133001E5F1A /* SeaFreightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaFreightViewController.swift; sourceTree = "<group>"; };
+		9F4344F32209A145001E5F1A /* RoadFreightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadFreightViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,40 @@
 		9F4344DB22098D6E001E5F1A /* Shipment Calc */ = {
 			isa = PBXGroup;
 			children = (
-				9F4344DC22098D6E001E5F1A /* AppDelegate.swift */,
-				9F4344DE22098D6E001E5F1A /* ViewController.swift */,
+				9F4344F022098D95001E5F1A /* Controller */,
+				9F4344EF22098D91001E5F1A /* View */,
+				9F4344EE22098D8A001E5F1A /* Model */,
 				9F4344E022098D6E001E5F1A /* Main.storyboard */,
 				9F4344E322098D71001E5F1A /* Assets.xcassets */,
 				9F4344E522098D71001E5F1A /* LaunchScreen.storyboard */,
 				9F4344E822098D71001E5F1A /* Info.plist */,
 			);
 			path = "Shipment Calc";
+			sourceTree = "<group>";
+		};
+		9F4344EE22098D8A001E5F1A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9F4344EF22098D91001E5F1A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9F4344F022098D95001E5F1A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9F4344DC22098D6E001E5F1A /* AppDelegate.swift */,
+				9F4344F32209A145001E5F1A /* RoadFreightViewController.swift */,
+				9F4344DE22098D6E001E5F1A /* AirFreightViewController.swift */,
+				9F4344F12209A133001E5F1A /* SeaFreightViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +165,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F4344DF22098D6E001E5F1A /* ViewController.swift in Sources */,
+				9F4344F42209A145001E5F1A /* RoadFreightViewController.swift in Sources */,
+				9F4344F22209A133001E5F1A /* SeaFreightViewController.swift in Sources */,
+				9F4344DF22098D6E001E5F1A /* AirFreightViewController.swift in Sources */,
 				9F4344DD22098D6E001E5F1A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

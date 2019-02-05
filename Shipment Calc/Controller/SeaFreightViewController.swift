@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SeaFreightViewController.swift
 //  Shipment Calc
 //
 //  Created by Aleksandrs Muravjovs on 05/02/2019.
@@ -8,13 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SeaFreightViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        // Do any additional setup after loading the view.
     }
+    
 
 
 }
-
