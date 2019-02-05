@@ -14,6 +14,8 @@
 		9F4344E722098D71001E5F1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F4344E522098D71001E5F1A /* LaunchScreen.storyboard */; };
 		9F4344F22209A133001E5F1A /* SeaFreightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4344F12209A133001E5F1A /* SeaFreightViewController.swift */; };
 		9F4344F42209A145001E5F1A /* RoadFreightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4344F32209A145001E5F1A /* RoadFreightViewController.swift */; };
+		9F4344F62209AB3A001E5F1A /* AirCalculationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4344F52209AB3A001E5F1A /* AirCalculationsModel.swift */; };
+		9F4344F82209C871001E5F1A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4344F72209C871001E5F1A /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		9F4344E822098D71001E5F1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F4344F12209A133001E5F1A /* SeaFreightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaFreightViewController.swift; sourceTree = "<group>"; };
 		9F4344F32209A145001E5F1A /* RoadFreightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadFreightViewController.swift; sourceTree = "<group>"; };
+		9F4344F52209AB3A001E5F1A /* AirCalculationsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirCalculationsModel.swift; sourceTree = "<group>"; };
+		9F4344F72209C871001E5F1A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,7 @@
 		9F4344EE22098D8A001E5F1A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9F4344F52209AB3A001E5F1A /* AirCalculationsModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -90,6 +95,7 @@
 				9F4344F32209A145001E5F1A /* RoadFreightViewController.swift */,
 				9F4344DE22098D6E001E5F1A /* AirFreightViewController.swift */,
 				9F4344F12209A133001E5F1A /* SeaFreightViewController.swift */,
+				9F4344F72209C871001E5F1A /* SettingsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -166,9 +172,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F4344F42209A145001E5F1A /* RoadFreightViewController.swift in Sources */,
+				9F4344F62209AB3A001E5F1A /* AirCalculationsModel.swift in Sources */,
 				9F4344F22209A133001E5F1A /* SeaFreightViewController.swift in Sources */,
 				9F4344DF22098D6E001E5F1A /* AirFreightViewController.swift in Sources */,
 				9F4344DD22098D6E001E5F1A /* AppDelegate.swift in Sources */,
+				9F4344F82209C871001E5F1A /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
