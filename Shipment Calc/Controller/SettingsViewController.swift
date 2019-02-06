@@ -22,7 +22,6 @@ class SettingsViewController: UIViewController {
         } else {
             inputTypeSegmentedController.selectedSegmentIndex = 0
         }
-        
     }
     
     
@@ -31,12 +30,14 @@ class SettingsViewController: UIViewController {
         switch inputTypeSegmentedController.selectedSegmentIndex {
         case 0:
             UserDefaults.standard.setValue("metric", forKey: "inputType")
+            UserDefaults.standard.set(6000, forKey: "inputCriteria")
 
         case 1:
             UserDefaults.standard.setValue("english", forKey: "inputType")
+            UserDefaults.standard.set(166, forKey: "inputCriteria")
+
         default:
             break
         }
     }
-    
 }

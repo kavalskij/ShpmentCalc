@@ -40,8 +40,11 @@ class AirFreightViewController: UIViewController, UITextFieldDelegate {
         guard let pieces = Int(piecesTextField.text!) else { return }
         guard let grossWeight = Double(totalWeightTextField.text!) else { return }
         
-        chWeightResultLabel.text = String(AirCalculationsModel().calculateChWeight(lenght: length, width: width, height: height, pieces: pieces, grossWeight: grossWeight))
-        volumeResult.text = String(AirCalculationsModel().calculateVolume(length: length, width: width, height: height, pieces: pieces))
+        let chWeight: Double = AirCalculationsModel().calculateChWeight(lenght: length, width: width, height: height, pieces: pieces, grossWeight: grossWeight)
+        let volume: Double = AirCalculationsModel().calculateVolume(length: length, width: width, height: height, pieces: pieces)
+        
+        chWeightResultLabel.text = String(format: "%.2f", chWeight)
+        volumeResult.text = String(format: "%.2f", volume)
     }
     
     @objc func dismissKeyboard() {

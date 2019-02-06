@@ -10,32 +10,34 @@ import Foundation
 
 class AirCalculationsModel {
     
-    private var criteria: Int = 0
     
     func calculateChWeight(lenght: Double, width: Double, height: Double, pieces: Int, grossWeight: Double) -> Double {
         
-        inputTypeCriteria()
-        print(criteria)
+//        inputTypeCriteria()
+//        print(criteria)
+        
+        let criteria: Int = UserDefaults.standard.integer(forKey: "inputCriteria") 
         
         let chWeightResult = ((lenght * width * height) * Double(pieces))/Double(criteria)
         
         if chWeightResult >= grossWeight {
+            print(chWeightResult)
             return chWeightResult
         } else {
+            print(grossWeight)
             return grossWeight
         }
+        
     }
     
-    func inputTypeCriteria() {
-        
-        if UserDefaults.standard.value(forKey: "valueType") as? String == "metric" {
-           criteria = 6000
-        } else if UserDefaults.standard.value(forKey: "valueType") as? String == "english" {
-            criteria = 166
-        } else {
-           criteria = 6000
-        }
-    }
+//    func inputTypeCriteria() {
+//
+//        if UserDefaults.standard.value(forKey: "valueType") as? String == "metric" {
+//           criteria = 6000
+//        } else {
+//            criteria = 166
+//        }
+//    }
  
     
     func calculateVolume (length: Double, width: Double, height: Double, pieces: Int) -> Double {
