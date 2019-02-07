@@ -9,20 +9,19 @@
 /* Begin PBXBuildFile section */
 		9F4344DD22098D6E001E5F1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4344DC22098D6E001E5F1A /* AppDelegate.swift */; };
 		9F4344DF22098D6E001E5F1A /* AirFreightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4344DE22098D6E001E5F1A /* AirFreightViewController.swift */; };
-		9F4344E222098D6E001E5F1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F4344E022098D6E001E5F1A /* Main.storyboard */; };
 		9F4344E422098D71001E5F1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F4344E322098D71001E5F1A /* Assets.xcassets */; };
 		9F4344E722098D71001E5F1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F4344E522098D71001E5F1A /* LaunchScreen.storyboard */; };
 		9F4344F22209A133001E5F1A /* SeaFreightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4344F12209A133001E5F1A /* SeaFreightViewController.swift */; };
 		9F4344F42209A145001E5F1A /* RoadFreightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4344F32209A145001E5F1A /* RoadFreightViewController.swift */; };
 		9F4344F62209AB3A001E5F1A /* AirCalculationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4344F52209AB3A001E5F1A /* AirCalculationsModel.swift */; };
 		9F4344F82209C871001E5F1A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4344F72209C871001E5F1A /* SettingsViewController.swift */; };
+		9F4344FB220C6190001E5F1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F4344F9220C6190001E5F1A /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9F4344D922098D6E001E5F1A /* Shipment Calc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shipment Calc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F4344DC22098D6E001E5F1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F4344DE22098D6E001E5F1A /* AirFreightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirFreightViewController.swift; sourceTree = "<group>"; };
-		9F4344E122098D6E001E5F1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F4344E322098D71001E5F1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F4344E622098D71001E5F1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F4344E822098D71001E5F1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -30,6 +29,7 @@
 		9F4344F32209A145001E5F1A /* RoadFreightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadFreightViewController.swift; sourceTree = "<group>"; };
 		9F4344F52209AB3A001E5F1A /* AirCalculationsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirCalculationsModel.swift; sourceTree = "<group>"; };
 		9F4344F72209C871001E5F1A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		9F4344FA220C6190001E5F1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Shipment Calc/Base.lproj/Main.storyboard"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +65,6 @@
 				9F4344F022098D95001E5F1A /* Controller */,
 				9F4344EF22098D91001E5F1A /* View */,
 				9F4344EE22098D8A001E5F1A /* Model */,
-				9F4344E022098D6E001E5F1A /* Main.storyboard */,
 				9F4344E322098D71001E5F1A /* Assets.xcassets */,
 				9F4344E522098D71001E5F1A /* LaunchScreen.storyboard */,
 				9F4344E822098D71001E5F1A /* Info.plist */,
@@ -84,6 +83,7 @@
 		9F4344EF22098D91001E5F1A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9F4344F9220C6190001E5F1A /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -158,9 +158,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F4344FB220C6190001E5F1A /* Main.storyboard in Resources */,
 				9F4344E722098D71001E5F1A /* LaunchScreen.storyboard in Resources */,
 				9F4344E422098D71001E5F1A /* Assets.xcassets in Resources */,
-				9F4344E222098D6E001E5F1A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,20 +183,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9F4344E022098D6E001E5F1A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9F4344E122098D6E001E5F1A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9F4344E522098D71001E5F1A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				9F4344E622098D71001E5F1A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9F4344F9220C6190001E5F1A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F4344FA220C6190001E5F1A /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
