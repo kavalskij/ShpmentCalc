@@ -29,7 +29,6 @@ class AirFreightViewController: UIViewController, UITextFieldDelegate {
         self.heightTextField.delegate = self
         self.piecesTextField.delegate = self
         self.totalWeightTextField.delegate = self
-        
     }
     
     @IBAction func claculateBtnPressed(_ sender: UIButton) {

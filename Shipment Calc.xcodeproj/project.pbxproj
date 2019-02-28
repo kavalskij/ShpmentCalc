@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F341C302228032A00BEEEC2 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F341C2F2228032A00BEEEC2 /* Helper.swift */; };
 		9F4344DD22098D6E001E5F1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4344DC22098D6E001E5F1A /* AppDelegate.swift */; };
 		9F4344DF22098D6E001E5F1A /* AirFreightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4344DE22098D6E001E5F1A /* AirFreightViewController.swift */; };
 		9F4344E422098D71001E5F1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F4344E322098D71001E5F1A /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F341C2F2228032A00BEEEC2 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		9F4344D922098D6E001E5F1A /* Shipment Calc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shipment Calc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F4344DC22098D6E001E5F1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F4344DE22098D6E001E5F1A /* AirFreightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirFreightViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F341C2E2228031300BEEEC2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9F341C2F2228032A00BEEEC2 /* Helper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		9F4344D022098D6E001E5F1A = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +72,7 @@
 		9F4344DB22098D6E001E5F1A /* Shipment Calc */ = {
 			isa = PBXGroup;
 			children = (
+				9F341C2E2228031300BEEEC2 /* Helpers */,
 				9F4344F022098D95001E5F1A /* Controller */,
 				9F4344EF22098D91001E5F1A /* View */,
 				9F4344EE22098D8A001E5F1A /* Model */,
@@ -172,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F4344F42209A145001E5F1A /* RoadFreightViewController.swift in Sources */,
+				9F341C302228032A00BEEEC2 /* Helper.swift in Sources */,
 				9F4344F62209AB3A001E5F1A /* AirCalculationsModel.swift in Sources */,
 				9F4344F22209A133001E5F1A /* SeaFreightViewController.swift in Sources */,
 				9F4344DF22098D6E001E5F1A /* AirFreightViewController.swift in Sources */,

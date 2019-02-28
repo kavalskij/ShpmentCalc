@@ -22,6 +22,9 @@ class SettingsViewController: UIViewController {
         } else {
             inputTypeSegmentedController.selectedSegmentIndex = 0
         }
+        
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
     }
     
     
